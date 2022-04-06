@@ -12,17 +12,7 @@ function Test() {
         // console.log(arr);
         setData1(arr);
     }
-    // const dateSort = () => {
-    //     // console.log(data);
-    //     // let arrSort = data.sort((a, b) => Date.parse(a.date) - Date.parse(b.date))
-    //     const sortedCars1 = data1.sort((a, b) => new Date(...a.date.split('/').reverse()) - new Date(...b.date.split('/').reverse()));
-    //     // arrSort = arrSort.sort((a, b) => (a.date) - (b.date));
-    //     console.log(sortedCars1);
-    //     //  console.log();
-    //     setData1(sortedCars1)
-    //     console.log(data1);
-
-    // };
+    
     const filter = (ele) => {
         // console.log(ele.target.value);
         const filter = data.filter((el) => el.status === ele.target.value);
