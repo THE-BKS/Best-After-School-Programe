@@ -23,11 +23,11 @@ function Test() {
         fetch(" https://my-json-server.typicode.com/Ved-X/assignment/orders").then(
             (result) => {
                 result.json().then((resp) => {
-                    const sortedCars1 = resp.sort((a, b) => new Date(...a.date.split('/').reverse()) - new Date(...b.date.split('/').reverse()));
+                    const sorteddate = resp.sort((a, b) => new Date(...a.date.split('/').reverse()) - new Date(...b.date.split('/').reverse()));
                     // arrSort = arrSort.sort((a, b) => (a.date) - (b.date));
-                    console.log(sortedCars1);
-                    setData(sortedCars1);
-                    setData1(sortedCars1);
+                    console.log(sorteddate);
+                    setData(sorteddate);
+                    setData1(sorteddate);
 
                 });
             }
